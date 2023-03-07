@@ -1,19 +1,14 @@
-print("Please enter your name,lab grade, midterm grade and final grade: ")
-name=input()
+
+name = input("Enter student name: ")
+lab = float(input("Enter lab grade : "))
+mid = float(input("Enter midterm grade : "))
+final = float(input("Enter final grade : "))
+
+lastScore = (lab * 0.25) + (mid * 0.35) + (final * 0.4)
 
 
-lab=input()
-
-
-mid=input()
-
-
-final=input()
-
-
-lastScore= float(lab)*0.25+ float(mid)*0.35+float(final)*0.4
-print("Name: "+name)
-print("Lab: "+lab)
-print("Midterm: "+mid)
-print("Final: "+final)
+print("Name: "+name )
+print("Lab: "+str(lab))
+print("Midterm: "+str(mid))
+print("Final: "+str(final))
 print("Last Score: "+str(lastScore))
